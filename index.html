@@ -2,33 +2,26 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>JS Exercise 2</title>
+    <title>JS Exercise 3</title>
 </head>
 <body>
 
-    <h1>JS Exercise 2</h1>
+    <h1>JS Exercise 3</h1>
 
     <p>
-        First Name:
-        <input type="text" id="firstName">
+        Enter a Number:
+        <input type="text" id="numberInput">
     </p>
 
-    <p>
-        Middle Name:
-        <input type="text" id="middleName">
-    </p>
-
-    <p>
-        Last Name:
-        <input type="text" id="lastName">
-    </p>
-
-    <button onclick="generateFullName()">Generate Fullname</button>
-    <button onclick="clearEntries()">Clear Entries</button>
+    <button onclick="insertNumber()">Insert</button>
+    <button onclick="deleteAll()">Delete All</button>
 
     <br><br>
 
-    <p>Full Name: <span id="fullName"></span></p>
+    <p>Numbers: <span id="numbers"></span></p>
+    <p>Sum: <span id="sum"></span></p>
+    <p>Highest: <span id="highest"></span></p>
+    <p>Lowest: <span id="lowest"></span></p>
 
     <!-- CONNECTED HERE -->
     <script src="main.js"></script>
