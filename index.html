@@ -2,51 +2,36 @@
 <html>
 <head>
     <meta charset="UTF-8">
-    <title>JS Exercise 1</title>
+    <title>JS Exercise 2</title>
 </head>
 <body>
 
-    <h1>JS Exercise 1</h1>
+    <h1>JS Exercise 2</h1>
 
     <p>
-        Enter First Number:
-        <input type="text" id="num1">
+        First Name:
+        <input type="text" id="firstName">
     </p>
 
     <p>
-        Enter Second Number:
-        <input type="text" id="num2">
+        Middle Name:
+        <input type="text" id="middleName">
     </p>
 
-    <button onclick="calculate()">Calculate</button>
-    <button onclick="clearFields()">Clear</button>
+    <p>
+        Last Name:
+        <input type="text" id="lastName">
+    </p>
 
-    <h3>Results:</h3>
-    <p>Sum: <span id="sum"></span></p>
-    <p>Difference: <span id="difference"></span></p>
-    <p>Product: <span id="product"></span></p>
-    <p>Quotient: <span id="quotient"></span></p>
+    <button onclick="generateFullName()">Generate Fullname</button>
+    <button onclick="clearEntries()">Clear Entries</button>
 
-    <script>
-        function calculate() {
-            var first = parseFloat(document.getElementById("num1").value);
-            var second = parseFloat(document.getElementById("num2").value);
+    <br><br>
 
-            document.getElementById("sum").innerHTML = first + second;
-            document.getElementById("difference").innerHTML = first - second;
-            document.getElementById("product").innerHTML = first * second;
-            document.getElementById("quotient").innerHTML = first / second;
-        }
+    <p>Full Name: <span id="fullName"></span></p>
 
-        function clearFields() {
-            document.getElementById("num1").value = "";
-            document.getElementById("num2").value = "";
-            document.getElementById("sum").innerHTML = "";
-            document.getElementById("difference").innerHTML = "";
-            document.getElementById("product").innerHTML = "";
-            document.getElementById("quotient").innerHTML = "";
-        }
-    </script>
+    <!-- CONNECTED HERE -->
+    <script src="main.js"></script>
 
 </body>
 </html>
